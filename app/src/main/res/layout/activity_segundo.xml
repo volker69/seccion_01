@@ -16,4 +16,15 @@
         android:text="Texto"
         android:textSize="39dp" />
 
+    <Button
+        android:id="@+id/button2"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NExt activity" />
+
+
 </RelativeLayout>

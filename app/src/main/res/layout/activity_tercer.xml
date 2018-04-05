@@ -29,19 +29,18 @@
         android:layout_toEndOf="@+id/editTextPhone"
         android:layout_toRightOf="@+id/editTextPhone"
         android:background="@android:color/transparent"
-        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+        app:srcCompat="@android:drawable/stat_sys_phone_call" android:contentDescription="TODO" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextPhone"
-        android:layout_alignStart="@+id/editTextPhone"
-        android:layout_below="@+id/editTextPhone"
-        android:layout_marginTop="49dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="web" />
+   <EditText
+       android:id="@+id/editTextWebs"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/editTextPhone"
+       android:layout_alignStart="@+id/editTextPhone"
+       android:layout_below="@+id/editTextPhone"
+       android:layout_marginTop="49dp"
+       android:ems="10"
+       />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -49,8 +48,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageButtonPhone"
         android:layout_alignStart="@+id/imageButtonPhone"
-        android:layout_alignTop="@+id/editText2"
-        app:srcCompat="?android:attr/actionModeShareDrawable" />
+        android:layout_alignTop="@+id/editTextWebs"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_view" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -60,4 +60,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="12dp"
         app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWebs"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:text="TextView" />
 </RelativeLayout>
